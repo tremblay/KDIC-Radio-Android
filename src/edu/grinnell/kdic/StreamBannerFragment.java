@@ -63,9 +63,9 @@ public class StreamBannerFragment extends Fragment {
         metadataText = (TextView) view.findViewById(R.id.curPlayingText);
         
         //initializing playButton images variables.
-        onStartButtonImage = SVGParser.getSVGFromResource(getResources(), R.drawable.loadingfinalgray); 
-        onPreparedButtonImage = SVGParser.getSVGFromResource(getResources(), R.drawable.testsvg); 
-        onStopButtonImage = SVGParser.getSVGFromResource(getResources(), R.drawable.testsvg); 
+        onStartButtonImage = SVGParser.getSVGFromResource(getResources(), R.drawable.loading); 
+        onPreparedButtonImage = SVGParser.getSVGFromResource(getResources(), R.drawable.pause); 
+        onStopButtonImage = SVGParser.getSVGFromResource(getResources(), R.drawable.play); 
         
         //playPause listener. Stops/starts stream
         playButton.setOnClickListener(new View.OnClickListener() {
