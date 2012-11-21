@@ -30,7 +30,7 @@ public class StreamBannerFragment extends Fragment {
     private ImageButton playButton; //playPause button
     private ImageView metadataImage; //Metadata image. Duhh.
     private TextView metadataText; //Double duhh.
-    private final ImageDownloader mDownload = new ImageDownloader();
+    private final ImageDownloader mDownload = new ImageDownloader(); //Downloading tool to get the metadata image.
     
     boolean isLoading = false; //true if stream is loading but not playing
     
@@ -64,8 +64,8 @@ public class StreamBannerFragment extends Fragment {
         
         //initializing playButton images variables.
         onStartButtonImage = SVGParser.getSVGFromResource(getResources(), R.drawable.loadingfinalgray); 
-        onPreparedButtonImage = SVGParser.getSVGFromResource(getResources(), R.drawable.pausefinal); 
-        onStopButtonImage = SVGParser.getSVGFromResource(getResources(), R.drawable.playfinal); 
+        onPreparedButtonImage = SVGParser.getSVGFromResource(getResources(), R.drawable.testsvg); 
+        onStopButtonImage = SVGParser.getSVGFromResource(getResources(), R.drawable.testsvg); 
         
         //playPause listener. Stops/starts stream
         playButton.setOnClickListener(new View.OnClickListener() {
